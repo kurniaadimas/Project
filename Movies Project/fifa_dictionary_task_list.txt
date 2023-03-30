@@ -1,0 +1,89 @@
+[]      column name     : lowercase
+[]      column name     : joined with `_`
+[]      column name     : removed special character
+
+
+[]      id              : Unique ID. Change type to INT.
+[]      name              : Nickname of players. Fix irregular character. Change type to STR.
+[]      longname          : Full name of players. Google to fill in data. Change type to STR.
+[]      photourl          : Player photo URL. Mandatory for viz. Change type to STR.
+[]      playerurl         : Player's website. Mandatory for viz. Change type to STR.
+[]      nationality       : Player's country of origin. Change type to STR.
+[]      age             : Player's age. Change type to INT.
+[]      ova             : Overall Analysis. Rate in percentage out of 100%. Change type to INT.
+[]      pot             : Player's potential. Percentage out of 100%. Change type to INT.
+[]      club              : Change column name to Team. Player's origin team. Drop the column.
+[]      contract        : Player's contract status. Replace `~` with `-`. Change type to INT.
+[]      positions         : Player's in field position. Multiple values. Change type to STR.
+[]      height            : Height in cm and feet. Change all to feet. Then change to kg. Change type to INT.
+[]      weight            : Weight in kg and lbs. Change all to kg. Change type to INT.
+[]      preferred_foot    : Strong foot preference. Left/Right. Change type to STR.
+[]      bov               : Best Overall. Player's ability to hold ball in feet. Percentage out of 100%. Change type to INT.
+[]      best_position     : Position at which Player possess the ball the most. Same coding as Position. Change type to STR.
+[]      joined            : Starting date of playing in National Team. Change type to datetime.
+[]      loan_date_end     : Ending date of players on loan. Empty means not on loan, fill with NaN. Change type to datetime.
+[]      value             : Player's worth in USD. Value contains numbers, K, and M. Convert to numbers. Change type to INT
+[]      wage              : Player's weekly salary in USD. Value contains numbers, K, and M. Convert to numbers. Change type to INT.
+[]      release_clause    : Amount of USD required for player to leave for another club. Value contains numbers, K, and M. Convert to numbers. Change type to INT.
+[]      attacking         : 
+[]      crossing          :
+[]      finishing         : 
+[]      heading_accuracy  : 
+[]      short_passing     : 
+[]      volleys           : 
+[]      skill             : 
+[]      dribbling         : 
+[]      curve             : 
+[]      fk_accuracy       : Free Kick Accuracy. Percentage out of 100%. Change type to INT.
+[]      long_passing      : 
+[]      ball_control      : 
+[]      movement          : 
+[]      acceleration      : 
+[]      sprint_speed      : 
+[]      agility           : 
+[]      reactions         : 
+[]      balance           : 
+[]      power             : 
+[]      shot_power        : 
+[]      jumping           : 
+[]      stamina           : 
+[]      strength          : 
+[]      long_shots        : 
+[]      mentality         : 
+[]      aggression        : 
+[]      interceptions     : 
+[]      positioning       : 
+[]      vision            : 
+[]      penalties         : 
+[]      composure         : 
+[]      defending         : 
+[]      marking           : 
+[]      standing_tackle   : 
+[]      sliding_tackle    : 
+[]      goalkeeping       : 
+[]      gk_diving         : 
+[]      gk_handling       : 
+[]      gk_kicking        : 
+[]      gk_positioning    :         
+[]      gk_reflexes       :         
+[]      total_stats       :      
+[]      base_stats        :         
+[]      w/f               : Weak Foot rating. Scale of 1 to 5. Change type to INT.
+[]      sm                : Skill Moves. Scale of 1 to 5. Change type to INT.
+[]      a/w               : Attacking Work Rate. Scale of High, Medium, Low. Change type to STR.
+[]      d/w               : Defensive Work Rate. Scale of High, Medium, Low. Change type to STR.
+[]      ir                : Injury Ratio. Scale of 1 to 5. Change type to INT.        
+[]      pac               : Pace
+[]      sho               : Shooting Attribute.
+[]      pas               : Pass accuracy rating out of 100. Change into percentage. Change type to INT.
+[]      dri               : 
+[]      def               :        
+[]      phy               : 
+[]      hits              : 
+
+
+### New Columns
+
+[]  contract_status     : Based on `contract`. Free, Loanees, On Contract
+[]  contract_start      : Based on `contract`. Takes starting year.
+[]  contract_start      : Based on `contract`. Takes the ending year.
